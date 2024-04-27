@@ -51,5 +51,10 @@ public class Efemeride {
 	public void setDetalle(String detalle) {
 		this.detalle = detalle;
 	}
-	
+	public void mostrarDatos() {
+		System.out.println("CODIGO EFEMERIDE: "+this.codigo);
+		System.out.println("MES: "+this.mes);
+		System.out.println("DIA: "+this.dia);
+		System.out.println("DETALLE: "+this.detalle);
+	}
 }
