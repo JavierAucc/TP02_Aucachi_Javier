@@ -97,8 +97,6 @@ public class Main {
 		int prod=-1;
 		boolean band=false;
 		List<Double> comprados = new ArrayList();
-			//while(!band) {
-				//try {
 					cant=cantiProd();
 					while(cant!=0) {
 						mostrarProductos(productos);
@@ -121,11 +119,7 @@ public class Main {
 								System.out.println("NUMERO FUERA DE RANGO");
 							}
 						}
-					//}
-					//catch(InputMismatchException e) {
-						//System.out.println("ERROR INGRESO DE DATOS");
-					//}
-			//}
+				
 			System.out.println("\n PRODUCTOS COMPRADOS: "+comprados.size());
 			int c=menuPago();
 			double total=0;
