@@ -123,25 +123,20 @@ public class Main {
 			System.out.println("\n PRODUCTOS COMPRADOS: "+comprados.size());
 			int c=menuPago();
 			double total=0;
+			for (Double double1 : comprados) {
+				total= total + double1;
+			}
 			switch(c) {
-			case 1:
-					for (Double double1 : comprados) {
-						total= total + double1;
-					}
-					PagoEfectivo efete = new PagoEfectivo(total,LocalDate.now());
-					System.out.println(" -- Monto: "+total);
-					efete.realizarPago(total);
-					efete.imprimirRecibo();
-					break;
-			case 2:
-					for (Double double1 : comprados) {
-						total= total + double1;
-					}
-					PagoTarjeta tarjet = new PagoTarjeta("#tarjetacliente00",LocalDate.now(),total);
-					System.out.println(" -- Monto: "+total);
-					tarjet.realizarPago(total);
-					tarjet.imprimirRecibo();
-					break;
+				case 1:PagoEfectivo efete = new PagoEfectivo(total,LocalDate.now());
+						System.out.println(" -- Monto: "+total);
+						efete.realizarPago(total);
+						efete.imprimirRecibo();
+						break;
+				case 2:PagoTarjeta tarjet = new PagoTarjeta(codTarjeta(),LocalDate.now(),total);
+						System.out.println(" -- Monto: "+total);
+						tarjet.realizarPago(total);
+						tarjet.imprimirRecibo();
+						break;
 			}
 			
 	}
@@ -204,5 +199,21 @@ public class Main {
 			scanner.nextLine();
 		}
 		return p;
+	}
+	static String codTarjeta() {
+		boolean band=false;
+		String cod="";
+		while(!band) {
+			try {
+				System.out.println("\n INGRESE CODIGO DE TARJETA");
+					cod=scanner.nextLine();
+					band=true;
+				}
+				catch(InputMismatchException e) {
+					System.out.println("\n ERROR INGRESO DE DATO");
+					System.out.println("INGRESE NUEVAMENTE");
+				}
+		}
+		return cod;
 	}
 }
