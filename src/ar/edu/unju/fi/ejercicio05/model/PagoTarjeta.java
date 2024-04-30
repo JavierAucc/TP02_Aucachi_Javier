@@ -37,12 +37,13 @@ public class PagoTarjeta implements Pago{
 //metodos de la interfaz
 	@Override
 	public void realizarPago(double monto) {
-		
+		setMontoPagado(this.montoPagado+(this.montoPagado*15/100));
 	}
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("-- Numero de Tarjeta: "+this.numeroTarjeta);
+		System.out.println("-- Fecha de Pago: "+this.fechaDePago);
+		System.out.println("-- Monto a Pagar con Recarga: "+this.montoPagado);
 	}
 	
 	

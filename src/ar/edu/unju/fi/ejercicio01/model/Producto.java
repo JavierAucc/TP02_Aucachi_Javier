@@ -6,7 +6,7 @@ public class Producto {
 	private double precio_unitario;
 	private OrigenFabricacion origen;
 	private Categoria categoria;
-	
+	private Boolean estado;
 	public Producto() {
 		// TODO Auto-generated constructor stub
 	}
@@ -20,7 +20,17 @@ public class Producto {
 		this.origen = origen;
 		this.categoria = categoria;
 	}
-
+	//constructor para el ejercicio 5
+	public Producto(String codigo, String descripcion, double precio_unitario, OrigenFabricacion origen,
+			Categoria categoria, Boolean estado) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precio_unitario = precio_unitario;
+		this.origen = origen;
+		this.categoria = categoria;
+		this.estado = estado;
+	}
 	public String getCodigo() {
 		return codigo;
 	}
@@ -60,6 +70,13 @@ public class Producto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+	public Boolean getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Boolean estado) {
+		this.estado = estado;
 	}
 
 

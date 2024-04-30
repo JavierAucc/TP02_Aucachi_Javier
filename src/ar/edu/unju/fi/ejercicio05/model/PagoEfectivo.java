@@ -33,13 +33,13 @@ public class PagoEfectivo implements Pago{
 
 	@Override
 	public void realizarPago(double monto) {
-		// TODO Auto-generated method stub
-		
+		setMontoPagado(this.montoPagado-(this.montoPagado*10/100));
 	}
 
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
+		System.out.println(" -- Fecha de Pago: "+this.fechaDePago);
+		System.out.println(" -- Monto a Pagar con Descuento: "+this.montoPagado);
 		
 	}
 	
