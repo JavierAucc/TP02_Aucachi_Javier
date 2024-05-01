@@ -11,7 +11,6 @@ import ar.edu.unju.fi.ejercicio01.model.Producto.Categoria;
 import ar.edu.unju.fi.ejercicio01.model.Producto.OrigenFabricacion;
 import ar.edu.unju.fi.ejercicio05.model.PagoEfectivo;
 import ar.edu.unju.fi.ejercicio05.model.PagoTarjeta;
-//import ar.edu.unju.fi.ejercicio05.model.PagoEfectivo;
 
 public class Main {
 	
@@ -127,7 +126,7 @@ public class Main {
 				total= total + double1;
 			}
 			switch(c) {
-				case 1:PagoEfectivo efete = new PagoEfectivo(total,LocalDate.now());
+				case 1: PagoEfectivo efete = new PagoEfectivo(total,LocalDate.now());
 						System.out.println(" -- Monto: "+total);
 						efete.realizarPago(total);
 						efete.imprimirRecibo();
