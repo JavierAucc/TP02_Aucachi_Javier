@@ -126,6 +126,7 @@ public class Main {
 			}
 			switch(c) {
 				case 1: PagoEfectivo efete = new PagoEfectivo(total,LocalDate.now());
+						
 						System.out.println(" -- Monto: "+total);
 						efete.realizarPago(total);
 						efete.imprimirRecibo();
