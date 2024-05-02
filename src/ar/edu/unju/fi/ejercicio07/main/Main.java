@@ -92,36 +92,21 @@ public class Main {
 		productos.forEach(nombre);
 	}
 	static void carga(List<Producto> productos) {
-		Producto prod1= new Producto("1111","teclado",1200,OrigenFabricacion.ARGENTINA,Categoria.INFORMATICA,true);
-		Producto prod2= new Producto("2222","batidora",1300,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,false);
-		Producto prod3= new Producto("3333","led",1400,OrigenFabricacion.CHINA,Categoria.INFORMATICA,true);
-		Producto prod4= new Producto("4444","Celular",1500,OrigenFabricacion.ARGENTINA,Categoria.TELEFONIA,false);
-		Producto prod5= new Producto("5555","hdd",1600,OrigenFabricacion.URUGUAY,Categoria.INFORMATICA,true);
-		Producto prod6= new Producto("6666","plancha",1700,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,true);
-		Producto prod7= new Producto("7777","parlante",1800,OrigenFabricacion.CHINA,Categoria.INFORMATICA,true);
-		Producto prod8= new Producto("8888","destornillador",1900,OrigenFabricacion.CHINA,Categoria.HERRAMIENTAS,false);
-		Producto prod9= new Producto("9999","modem",2000,OrigenFabricacion.ARGENTINA,Categoria.INFORMATICA,true);
-		Producto prod10= new Producto("1122","secarropas",2100,OrigenFabricacion.ARGENTINA,Categoria.ELECTROHOGAR,false);
-		Producto prod11= new Producto("1133","procesador",2200,OrigenFabricacion.URUGUAY,Categoria.INFORMATICA,true);
-		Producto prod12= new Producto("1144","usb",2300,OrigenFabricacion.CHINA,Categoria.INFORMATICA,false);
-		Producto prod13= new Producto("1155","taladro",2400,OrigenFabricacion.BRASIL,Categoria.HERRAMIENTAS,false);
-		Producto prod14= new Producto("1166","televisor",2500,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,false);
-		Producto prod15= new Producto("1177","Lavarropas",2600,OrigenFabricacion.ARGENTINA,Categoria.ELECTROHOGAR,true);
-		productos.add(prod1);
-		productos.add(prod2);
-		productos.add(prod3);
-		productos.add(prod4);
-		productos.add(prod5);
-		productos.add(prod6);
-		productos.add(prod7);
-		productos.add(prod8);
-		productos.add(prod9);
-		productos.add(prod10);
-		productos.add(prod11);
-		productos.add(prod12);
-		productos.add(prod13);
-		productos.add(prod14);
-		productos.add(prod15);
+		productos.add(new Producto("1111","teclado",1200,OrigenFabricacion.ARGENTINA,Categoria.INFORMATICA,true));
+		productos.add(new Producto("2222","batidora",1300,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,false));
+		productos.add(new Producto("3333","led",1400,OrigenFabricacion.CHINA,Categoria.INFORMATICA,true));
+		productos.add(new Producto("4444","Celular",1500,OrigenFabricacion.ARGENTINA,Categoria.TELEFONIA,false));
+		productos.add(new Producto("5555","hdd",1600,OrigenFabricacion.URUGUAY,Categoria.INFORMATICA,true));
+		productos.add(new Producto("6666","plancha",1700,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,true));
+		productos.add(new Producto("7777","parlante",1800,OrigenFabricacion.CHINA,Categoria.INFORMATICA,true));
+		productos.add(new Producto("8888","destornillador",1900,OrigenFabricacion.CHINA,Categoria.HERRAMIENTAS,false));
+		productos.add(new Producto("9999","modem",2000,OrigenFabricacion.ARGENTINA,Categoria.INFORMATICA,true));
+		productos.add(new Producto("1122","secarropas",2100,OrigenFabricacion.ARGENTINA,Categoria.ELECTROHOGAR,false));
+		productos.add(new Producto("1133","procesador",2200,OrigenFabricacion.URUGUAY,Categoria.INFORMATICA,true));
+		productos.add(new Producto("1144","usb",2300,OrigenFabricacion.CHINA,Categoria.INFORMATICA,false));
+		productos.add(new Producto("1155","taladro",2400,OrigenFabricacion.BRASIL,Categoria.HERRAMIENTAS,false));
+		productos.add(new Producto("1166","televisor",2500,OrigenFabricacion.BRASIL,Categoria.ELECTROHOGAR,false));
+		productos.add(new Producto("1177","Lavarropas",2600,OrigenFabricacion.ARGENTINA,Categoria.ELECTROHOGAR,true));
 	}
 	static int menu() {
 		int op=0;
